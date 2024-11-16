@@ -10,14 +10,14 @@ interface TicketCardProps {
 }
 
 const TicketCard = ({ ticket, deleteTicket }: TicketCardProps) => {
-
-  const handleDelete: MouseEventHandler<HTMLButtonElement> = async (event) => {
-    const ticketId = Number(event.currentTarget.value);
-    if (!isNaN(ticketId)) {
+  // Delete ticket
+  const handleDelete: MouseEventHandler<HTMLButtonElement> = async (event) => {  // MouseEventHandler<HTMLButtonElement> is a type for event handlers
+    const ticketId = Number(event.currentTarget.value);  // event.currentTarget.value is a string
+    if (!isNaN(ticketId)) {  // isNaN() is a function that checks if a value is NaN (Not a Number)
       try {
-        const data = await deleteTicket(ticketId);
-        return data;
-      } catch (error) {
+        const data = await deleteTicket(ticketId);  // deleteTicket() is a function that deletes a ticket
+        return data;  // Return the data
+      } catch (error) {  
         console.error('Failed to delete ticket:', error);
       }
     }

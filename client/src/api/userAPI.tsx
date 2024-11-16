@@ -1,11 +1,11 @@
 import Auth from '../utils/auth';
 
-const retrieveUsers = async () => {
+const retrieveUsers = async () => {  // async function that retrieves users
   try {
-    const response = await fetch('/api/users', {
-      headers: {
-        'Content-Type': 'application/json',
-        Authorization: `Bearer ${Auth.getToken()}`
+    const response = await fetch('/api/users', {  // fetch() is a function that retrieves data from a URL
+      headers: {  // headers is an object that contains the headers of the request
+        'Content-Type': 'application/json',  // 'Content-Type' is a header that specifies the media type of the resource
+        Authorization: `Bearer ${Auth.getToken()}`  // 'Authorization' is a header that specifies the credentials for authenticating the client with the server
       }
     });
     const data = await response.json();
