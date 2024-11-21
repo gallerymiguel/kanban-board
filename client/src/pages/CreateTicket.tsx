@@ -60,7 +60,7 @@ const CreateTicket = () => {
 
   return (
     <>
-      <div className='container'>
+      <div className='create-container'>
         <form className='form' onSubmit=
         {handleSubmit}>
           <h1>Create Ticket</h1>

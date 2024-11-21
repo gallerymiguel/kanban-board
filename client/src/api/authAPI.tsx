@@ -1,5 +1,13 @@
 import { UserLogin } from "../interfaces/UserLogin";
 
+// const handleResponse = async (response: Response) => {
+//   if (!response.ok) {
+//     const errorData = await response.json();
+//     throw new Error(errorData.message || 'Unknown error');
+//   }
+//   return response.json();
+// };
+
 // TODO: make a POST request to the login route
 const login = async (userInfo: UserLogin) => {
   try {
