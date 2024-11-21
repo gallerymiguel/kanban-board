@@ -32,12 +32,12 @@ a:hover {
 }
 
 body {
-  background: #ECF0F1;
+  background: #313131af;
   background-size: cover;
   background-repeat: no-repeat no-repeat;
   background-position: center center;
   margin: 0;
-  place-items: center;
+  /* place-items: center; */
   min-width: 320px;
   min-height: 100vh;
 }
@@ -45,6 +45,8 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  margin-top: 60px;
+
 }
 
 button {
@@ -54,9 +56,11 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #ffffff;
   cursor: pointer;
   transition: border-color 0.25s;
+  margin-right: 10px;
+
 }
 button:hover {
   border-color: #646cff;
@@ -88,30 +92,34 @@ tbody tr:nth-child(odd) {
 .nav {
   display: flex;
   padding: 1em 2em;
+  justify-content: space-between;  
 }
 
 .nav ul {
   display: flex;
   margin-left: auto;
-  flex-direction: row;
+
 }
 
 .nav-title {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: larger;
+  font-size: x-large;
   font-weight: 900;
 }
 
 .nav-title a {
-  color: #b864c4;
-}
+  color: #0091ff;
+  font-weight: bold;
+  text-shadow: .4px 0.4px .4px rgba(0, 0, 0, 0.463), -.4px -.4px .4px rgba(0, 0, 0, 0.568);}
 
 .nav-item {
   display: block;
   margin-left: auto;
   list-style: none;
+  align-items: right;
+
 }
 
 .nav-link {
@@ -147,15 +155,15 @@ tbody tr:nth-child(odd) {
 }
 
 .todo {
-  background-color: #e9cbec;
+  background-color: #ffffff;
 }
 
 .inprogress {
-  background-color: #b864c4;
+  background-color: #b6b6b6;
 }
 
 .done {
-  background-color: #732381;
+  background-color: #605a53;
 }
 
 .ticket-card {
@@ -174,39 +182,59 @@ tbody tr:nth-child(odd) {
   /* height: 90%; */
 }
 
+.create-container {
+  width: 100%;
+  height: 100%;
+
+
+}
+
 #create-ticket-link {
   display: block;
   margin-left: auto;
 }
 
+.submit {
+padding-bottom: 20px;
+}
+ 
+.create-container form {
+  place-items: center;
+  padding-bottom: 20px;
+
+}
 
 .form {
-  width: 60%;
-  height: 80%;
-  background-color: #b864c4;
+  width: 43%;
+  height: 30%;
+  background-color: #fff7f7ec;
   margin: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  padding-left: 20px;
+  
 }
 
 .form > h1, .form > label {
-  color: yellow;
+  color: rgb(0, 0, 0);
 }
 
 .form > input {
-  width: 200px;
-  
+  width: 300px;
 }
 
 .form > label {
   margin-top: 2.5%;
   margin-bottom: 2.5%;
+  font-size: 1.2em;
+  margin-top: 0px;
+
 }
 
 .form button {
   margin-top: 2.5%;
+  width: 300px;
 }
 
 .form textarea {
@@ -242,6 +270,12 @@ tbody tr:nth-child(odd) {
   justify-content: center;
 }
 
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+  margin-top: -10px;
+}
+
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -252,6 +286,6 @@ tbody tr:nth-child(odd) {
     color: #747bff;
   }
   button {
-    background-color: #f9f9f9;
+    background-color: #ffffff;
   }
 }
