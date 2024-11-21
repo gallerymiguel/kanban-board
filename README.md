@@ -93,7 +93,7 @@ This project is a **Kanban board application** with **JWT-based authentication**
    ```
 6. Start the server:
    ```bash
-   npm run start
+   npm run start:dev
    ```
 
 ### Frontend Setup
