@@ -13,8 +13,9 @@ This project is a **Kanban board application** with **JWT-based authentication**
 4. [Usage](#usage)  
 5. [Project Requirements](#project-requirements)  
 6. [Deployment](#deployment)  
-7. [Contributing](#contributing)  
-8. [License](#license)  
+7. [Testing](#testing)
+8. [Contributing](#contributing)  
+9. [License](#license)  
 
 ---
 
@@ -140,10 +141,20 @@ This project is a **Kanban board application** with **JWT-based authentication**
 
 ## Deployment
 The application is deployed on **Render**.  
-Visit the live app: [Kanban Board](https://your-render-app-url)
+Visit the live app: [Kanban Board](https://krazy-kanban-board-n964.onrender.com/)
 
 ---
+## Testing
 
+Login testing:
+
+    { username: 'JollyGuru', password: 'password' },
+
+    { username: 'SunnyScribe', password: 'password' },
+
+    { username: 'RadiantComet', password: 'password' },
+
+---
 ## Contributing
 Contributions are welcome!  
 To contribute:
