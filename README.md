@@ -133,10 +133,6 @@ This project is a **Kanban board application** with **JWT-based authentication**
 - Session expiration after inactivity.
 - Organized project repository and environment variable usage.
 
-### Bonus Features (Optional)
-- Sorting and filtering tasks by category or due date.
-- A polished and interactive user interface.
-
 ---
 
 ## Deployment
